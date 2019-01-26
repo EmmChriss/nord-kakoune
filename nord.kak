@@ -21,15 +21,15 @@ evaluate-commands %sh{
    echo "
         # code
         face global value              ${nord15}
-        face global type               ${nord6}
-        face global variable           ${nord6}
-        face global module             ${nord6}
+        face global type               ${nord12}
+        face global variable           ${nord8}
+        face global module             ${nord7}
         face global function           ${nord9}
         face global string             ${nord14}
-        face global keyword            ${nord9}
+        face global keyword            ${nord11}
         face global operator           ${nord9}
-        face global attribute          ${nord6}
-        face global comment            ${nord3}
+        face global attribute          ${nord12}
+        face global comment            ${nord3}+b
         face global meta               ${nord7}
         face global builtin            default+b
 
@@ -45,7 +45,7 @@ evaluate-commands %sh{
         face global list               ${nord4}
 
         # builtin
-        face global Default            ${nord4},${nord0}
+        face global Default            ${nord4},default
         face global PrimarySelection   ${nord8},${nord1}
         face global SecondarySelection ${nord9},${nord10}
         face global PrimaryCursor      ${nord1},${nord4}
@@ -55,10 +55,10 @@ evaluate-commands %sh{
         face global LineNumbers        ${nord3},${nord0}
         face global LineNumberCursor   ${nord10},${nord1}
         face global LineNumbersWrapped ${nord10},${nord1}
-        face global MenuForeground     ${nord4},${nord1}
+        face global MenuForeground     ${nord4},${nord3}
         face global MenuBackground     ${nord4},${nord1}
-        face global MenuInfo           ${nord1}
-        face global Information        ${nord4},${nord1}
+        face global MenuInfo           ${nord4},${nord1}
+        face global Information        ${nord1},${nord4}
         face global Error              ${nord11},default+b
         face global StatusLine         ${nord4},${nord0}+b
         face global StatusLineMode     ${nord13}
@@ -67,6 +67,6 @@ evaluate-commands %sh{
         face global StatusCursor       ${nord4},${nord1}
         face global Prompt             ${nord4}+b
         face global MatchingChar       ${nord4},${nord1}+b
-        face global BufferPadding      ${nord11},${nord0}
+        face global BufferPadding      ${nord11},default
     "
 }
